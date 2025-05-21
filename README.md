@@ -96,7 +96,7 @@ terraform {
 }
 
 ```
-💡 Personal learning: This is the point where the S3 bucket and DynamoDB lock table become integrated. Although they were created independently during the initial terraform apply, they now work together as part of the remote backend configuration.
+💡 **Personal learning:** This is the point where the S3 bucket and DynamoDB lock table become integrated. Although they were created independently during the initial terraform apply, they now work together as part of the remote backend configuration.
 
 Then run:
 
