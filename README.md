@@ -49,7 +49,7 @@ This project is part of my Terraform learning journey with the goal of becoming 
 
 ```bash
 git clone https://github.com/janphilippgutt/aws-backend-setup.git
-cd terraform-bootstrap-aws
+cd aws-backend-setup
 ```
 
 ### 2. Create terraform.tfvars
