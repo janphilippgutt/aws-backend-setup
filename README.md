@@ -1,20 +1,17 @@
 # 🚀 Terraform: Remote Backend Setup (AWS)
 
-### Purpose: In a professional Terraform setup, it’s common to separate:
+### Purpose:
 
-- **A project solely for provisioning a remote backend as foundational infrastructure (S3 backend bucket for storing the .tfstate-file, DynamoDB table for locking).**
-    
-- **The main working projects: use that infrastructure as backend, but do not manage it themselves.**
-    
-📦 This way, the backend resources aren't destroyed accidentally when cleaning up or modifying main infrastructure.
+In a well-structured Terraform workflow, it's best practice to separate foundational infrastructure from application-specific deployments. This project demonstrates that principle by provisioning the **backend infrastructure required to support remote Terraform state management**.
 
-    
-This project demonstrates exactly that. It sets up the necessary AWS infrastructure to support a **remote Terraform backend** with:
+🔧 What it does:
+
+This project sets up a dedicated Terraform configuration to provision:
 
 - ✅ Remote state storage in an **S3 bucket**
-- ✅ State locking and consistency via a **DynamoDB table**
+- ✅ State locking via a **DynamoDB table** to prevent concurrent changes
 
-It is the first foundational step in creating Terraform projects that are **safe, scalable, and team-friendly**.
+These resources act as the remote backend to manage other shared state projects where several team members collaborate using Terraform.
 
 ---
 
