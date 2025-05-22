@@ -101,6 +101,11 @@ Then run:
 terraform init
 ```
 🧠 This migrates the state to the remote backend for that project.
+If successful, you will see this:
+
+![Image](https://github.com/user-attachments/assets/d3daa43b-1d97-48a9-b51b-2e2ba7feed31)
+
+-----
 
 ## 🚫 Safe Defaults
 
