@@ -1,10 +1,10 @@
 # 🚀 Terraform: Remote Backend Setup (AWS)
 
-### Purpose:
+## Purpose:
 
 In a well-structured Terraform workflow, it's best practice to separate foundational infrastructure from application-specific deployments. This project demonstrates that principle by provisioning the **backend infrastructure required to support remote Terraform state management**.
 
-🔧 What it does:
+## 🔧 What it does:
 
 This project sets up a dedicated Terraform configuration to provision:
 
